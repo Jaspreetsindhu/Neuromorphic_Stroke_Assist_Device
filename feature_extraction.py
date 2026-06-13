@@ -1,24 +1,20 @@
 import numpy as np
 
-# Create sample EEG signal
-fs = 250
-t = np.linspace(0, 5, fs * 5)
+def extract_features(signal_data):
 
-eeg_signal = np.sin(2 * np.pi * 10 * t)
+    mean_value = np.mean(signal_data)
 
-# Feature 1: Mean
-mean_value = np.mean(eeg_signal)
+    std_value = np.std(signal_data)
 
-# Feature 2: Standard Deviation
-std_value = np.std(eeg_signal)
+    max_value = np.max(signal_data)
 
-# Feature 3: Maximum Value
-max_value = np.max(eeg_signal)
+    min_value = np.min(signal_data)
 
-# Feature 4: Minimum Value
-min_value = np.min(eeg_signal)
+    features = [
+        mean_value,
+        std_value,
+        max_value,
+        min_value
+    ]
 
-print("Mean:", mean_value)
-print("Standard Deviation:", std_value)
-print("Maximum:", max_value)
-print("Minimum:", min_value)
+    return features

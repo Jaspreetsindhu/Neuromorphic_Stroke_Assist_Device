@@ -1,0 +1,6 @@
+print("Neuromorphic Stroke Rehabilitation System Started")
+print("Loading EEG Signal...")
+print("Filtering Signal...")
+print("Extracting Features...")
+print("Running AI Model...")
+print("Motor Intent Detection Complete")

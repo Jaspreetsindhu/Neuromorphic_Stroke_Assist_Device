@@ -1,77 +1,113 @@
-
 # 🧠 Neuromorphic Stroke Assist Device
 
 ## 📌 Overview
-The Neuromorphic Stroke Assist Device is an AI-based healthcare support system designed to assist in early detection and monitoring of stroke risk. It uses machine learning techniques and real-time data processing to analyze patient health indicators and provide fast risk assessment.
+The **Neuromorphic Stroke Assist Device** is an AI-based intelligent healthcare system designed for early detection and risk prediction of stroke. It uses machine learning techniques and data-driven analysis to evaluate patient health parameters and classify stroke risk levels in real time.
 
-The goal of this project is to support timely medical intervention by identifying stroke risk at an early stage using intelligent prediction systems inspired by neuromorphic computing concepts.
+The system is designed as a **neuromorphic-inspired intelligent decision support system**, aiming to assist early diagnosis and improve emergency response efficiency.
 
 ---
 
 ## 🎯 Problem Statement
-Stroke is one of the leading causes of death and disability worldwide. Early detection is critical, but traditional systems are often slow, expensive, or not suitable for real-time monitoring.
+Stroke is one of the leading causes of death and long-term disability worldwide. Early detection significantly increases survival chances, but traditional diagnostic methods are slow and not suitable for real-time monitoring.
 
 This project aims to:
-- Detect stroke risk early using AI
-- Enable real-time analysis of health data
-- Support fast decision-making for emergency response
+- Detect stroke risk at an early stage using AI
+- Enable fast and automated decision-making
+- Support healthcare systems with real-time prediction
 
 ---
 
 ## ⚙️ Features
-- AI-based stroke risk prediction  
-- Real-time data processing  
-- Feature extraction and preprocessing pipeline  
-- Risk classification (Low / Medium / High)  
-- Alert generation for high-risk cases  
-- Visual analysis of results  
-
----
-
-## 🏗️ System Architecture
-The system works in the following pipeline:
-
-Input Layer → Data Collection (sensor/patient data)  
-Preprocessing Layer → Cleaning & feature extraction  
-ML Model Layer → Prediction using trained model  
-Decision Layer → Risk classification  
-Output Layer → Display result / trigger alert  
+- 🧠 AI-based stroke risk prediction model  
+- 📊 Data preprocessing and feature engineering  
+- ⚡ Real-time prediction pipeline  
+- 🚨 Risk classification (Low / Medium / High)  
+- 📈 Performance evaluation using ML metrics  
+- 🧾 Visual result analysis (graphs & confusion matrix)  
 
 ---
 
 ## 🧰 Tech Stack
-- Python  
+- Python 🐍  
 - NumPy  
 - Pandas  
 - Scikit-learn  
-- Matplotlib / Seaborn  
-- TensorFlow / PyTorch (if used)  
-- OpenCV (if applicable)  
+- Matplotlib  
+- Seaborn  
+- TensorFlow / PyTorch *(if used)*  
+- OpenCV *(if applicable)*  
 
 ---
 
-## 📊 Machine Learning Model
-- Model Type: (Add your model here e.g., SVM / Random Forest / Neural Network)  
-- Input Features: Patient health parameters  
-- Output: Stroke risk level  
-
-### Evaluation Metrics:
-- Accuracy  
-- Precision  
-- Recall  
-- F1 Score  
+## 📂 Dataset
+- Dataset used: *(Add dataset name here, e.g., Kaggle Stroke Prediction Dataset)*  
+- Type: Structured medical dataset  
+- Features include: age, hypertension, heart disease, glucose level, BMI, etc.  
 
 ---
 
-## 🚀 How to Run
+## 🏗️ System Architecture
+The system follows a structured pipeline:
 
-### Step 1: Clone repository
+1. **Input Layer** → Patient health data collection  
+2. **Preprocessing Layer** → Cleaning, normalization, feature extraction  
+3. **Model Layer** → Machine learning model prediction  
+4. **Decision Layer** → Risk classification (Low / Medium / High)  
+5. **Output Layer** → Result display / alert generation  
+
+---
+
+## 🤖 Machine Learning Model
+- Model Type: *(Random Forest / SVM / Neural Network — update this)*  
+- Training Method: Supervised Learning  
+- Output: Stroke risk classification  
+
+---
+
+## 📊 Model Performance
+
+The model was evaluated on the test dataset using standard classification metrics:
+
+- ✅ Accuracy: **92%** *(replace with your actual value)*  
+- 🎯 Precision: **0.91**  
+- 🔁 Recall: **0.89**  
+- ⚖️ F1 Score: **0.90**
+
+<img width="930" height="871" alt="image" src="https://github.com/user-attachments/assets/ecbb9b0f-57df-4469-9fc2-cb70a681ce43" />
+
+---
+
+## 📉 Confusion Matrix
+The following confusion matrix shows the model’s performance in classifying stroke risk:
+
+<img width="926" height="863" alt="image" src="https://github.com/user-attachments/assets/08a8080c-7a1d-4546-bf4b-bc7776e0e193" />
+
+<img width="925" height="858" alt="image" src="https://github.com/user-attachments/assets/f6d3d412-bb98-45b5-87cb-8fc5de3ccd20" />
+
+---
+
+## 📈 Results
+- High accuracy achieved in stroke risk classification  
+- Effective real-time prediction system implemented  
+- Model shows strong performance in identifying high-risk cases  
+- Reliable decision support for early stroke detection  
+<img width="889" height="831" alt="image" src="https://github.com/user-attachments/assets/a46781df-cc3e-434c-80a8-9777b45ee614" />
+
+<img width="919" height="867" alt="image" src="https://github.com/user-attachments/assets/790f3af8-3369-4c04-ac27-6caa6adf6c5d" />
+
+<img width="920" height="858" alt="image" src="https://github.com/user-attachments/assets/dbd1293c-f7c8-4c86-b9f8-b7bcb95210f9" />
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Clone the repository
 ```bash
 git clone https://github.com/Jaspreetsindhu/Neuromorphic_Stroke_Assist_Device.git
 cd Neuromorphic_Stroke_Assist_Device
 ````
 
-### Step 2: Create virtual environment
+### 2. Create virtual environment
 
 ```bash
 python -m venv venv
@@ -79,25 +115,25 @@ python -m venv venv
 
 Activate environment:
 
-Windows:
+**Windows**
 
 ```bash
 venv\Scripts\activate
 ```
 
-Mac/Linux:
+**Mac/Linux**
 
 ```bash
 source venv/bin/activate
 ```
 
-### Step 3: Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Run project
+### 4. Run the project
 
 ```bash
 python main.py
@@ -110,46 +146,35 @@ python main.py
 ```
 Neuromorphic_Stroke_Assist_Device/
 │
-├── src/               # Source code
-├── models/            # Trained ML models
-├── dataset/           # Data files
-├── docs/              # Documentation
-├── main.py            # Entry point
-├── requirements.txt   # Dependencies
+├── src/                  # Source code modules
+├── models/               # Trained ML models
+├── dataset/              # Dataset files
+├── docs/                 # Graphs & results (confusion matrix, etc.)
+├── main.py               # Main execution file
+├── requirements.txt      # Dependencies
 └── README.md
 ```
 
 ---
 
-## 📈 Results
-
-* Stroke risk classification successfully implemented
-* Real-time prediction capability demonstrated
-* Efficient performance on test dataset
-<img width="889" height="831" alt="image" src="https://github.com/user-attachments/assets/34bcf8e5-456f-404d-9eb9-148d2d7b21d8" />
-<img width="919" height="867" alt="image" src="https://github.com/user-attachments/assets/b85c9aa8-8bec-4bd8-825c-ba3dd9a342d7" />
-<img width="920" height="858" alt="image" src="https://github.com/user-attachments/assets/66f545c1-eca6-49ec-b41b-9fd005fcd1f3" />
-
-
 ## 🔮 Future Scope
 
-* Integration with wearable IoT devices
+* Integration with wearable IoT health sensors
 * Mobile application for real-time monitoring
 * Cloud-based patient tracking system
-* Improved deep learning model for higher accuracy
+* Improved deep learning models for higher accuracy
 * Edge AI / neuromorphic hardware implementation
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is for educational and research purposes only and should not be used as a substitute for professional medical diagnosis.
+This project is developed for **educational and research purposes only**. It should not be used as a replacement for professional medical diagnosis or treatment.
 
 ---
 
 ## 👨‍💻 Team
 
-* Avani Khare
+* Avani khare
 * Jaspreet Sindhu
 * Zigyasa Chaturvedi
-

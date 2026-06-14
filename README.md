@@ -100,45 +100,45 @@ The following confusion matrix shows the model’s performance in classifying st
 
 ## 🚀 How to Run the Project
 
-### 1. Clone the repository
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Jaspreetsindhu/Neuromorphic_Stroke_Assist_Device.git
+```
+
+### 2. Navigate to the Project Folder
+
+```bash
 cd Neuromorphic_Stroke_Assist_Device
-````
-
-### 2. Create virtual environment
-
-```bash
-python -m venv venv
 ```
 
-Activate environment:
-
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-
-```bash
-source venv/bin/activate
-```
-
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run the project
+### 4. Navigate to the Dashboard Folder
 
 ```bash
-python main.py
+cd NeuroStrokeAI
 ```
 
----
+### 5. Launch the Application
+
+```bash
+streamlit run app.py
+```
+
+### 6. Open in Browser
+
+Streamlit will generate a local URL similar to:
+
+```text
+http://localhost:8501
+```
+
+Open the URL in your browser to access the NeuroStrokeAI dashboard.
 
 ## 📁 Project Structure
 

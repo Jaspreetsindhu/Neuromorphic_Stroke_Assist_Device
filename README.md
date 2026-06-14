@@ -179,7 +179,7 @@ This system successfully combines:
 - Real-time processing capability  
 - Low-latency intelligent decision making  
 - Efficient system-level performance metrics
-- 
+  
 ## 🔮 Future Scope
 
 * Integration with wearable IoT health sensors

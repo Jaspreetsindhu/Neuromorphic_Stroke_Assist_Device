@@ -64,7 +64,7 @@ The system follows a structured pipeline:
 
 ---
 
-## 📊 Model Performance
+## 📊 Accuracy and Metrics
 
 The model was evaluated on the test dataset using standard classification metrics:
 
@@ -72,8 +72,8 @@ The model was evaluated on the test dataset using standard classification metric
 - 🎯 Precision: **0.91**  
 - 🔁 Recall: **0.89**  
 - ⚖️ F1 Score: **0.90**
-
-<img width="930" height="871" alt="image" src="https://github.com/user-attachments/assets/ecbb9b0f-57df-4469-9fc2-cb70a681ce43" />
+  
+<img width="932" height="874" alt="image" src="https://github.com/user-attachments/assets/ecec9e62-f080-4b02-83ea-70269f9b8a09" />
 
 ---
 

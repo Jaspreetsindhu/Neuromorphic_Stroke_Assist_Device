@@ -1,4 +1,19 @@
+
+import os
+import pandas as pd
+import joblib
 import streamlit as st
+
+# 1. Get the exact folder where this app.py file lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Build the bulletproof pathing structure 
+model_path = os.path.join(BASE_DIR, "models", "neurostroke_model.pkl")
+data_path = os.path.join(BASE_DIR, "clean_data", "fused_dataset.csv")
+
+# 3. Safely execute the data loading pipelines
+model = joblib.load(model_path)
+df = pd.read_csv(data_path)  # <-- Line 48 updated!
 import pandas as pd
 import joblib
 import numpy as np
@@ -30,13 +45,24 @@ This system processes real-time EEG and EMG signals using AI-based neuromorphic 
 
 
 # Load Model
-model = joblib.load("models/neurostroke_model.pkl")
+import os
+
+# Get the exact folder where this app.py file lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Build the bulletproof path to the model and dataset
+model_path = os.path.join(BASE_DIR, "models", "neurostroke_model.pkl")
+data_path = os.path.join(BASE_DIR, "clean_data", "fused_dataset.csv")
+
+# Safely load the AI pipeline and dataset
+model = joblib.load(model_path)
+df = pd.read_csv(data_path)
 
 
 # Load Dataset
-df = pd.read_csv("clean_data/fused_dataset.csv")
+
 # Load Dataset
-df = pd.read_csv("clean_data/fused_dataset.csv")
+df = pd.read_csv(data_path)
 
 # FIX: Define signal_data immediately so it never causes a NameError
 signal_data = df.drop(columns=["label"], errors="ignore")

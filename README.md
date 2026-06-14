@@ -1,6 +1,4 @@
-Here is your **complete README in one single clean block** (copy-paste directly into GitHub):
 
-````md
 # 🧠 Neuromorphic Stroke Assist Device
 
 ## 📌 Overview

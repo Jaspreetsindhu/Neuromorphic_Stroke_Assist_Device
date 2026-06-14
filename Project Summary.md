@@ -1,4 +1,4 @@
-🧠 NeuroStrokeAI – AI-Powered Neuromorphic Stroke Detection and Risk Analysis System
+## NeuroStrokeAI – AI-Powered Neuromorphic Stroke Detection and Risk Analysis System
 
 # Project Overview
 

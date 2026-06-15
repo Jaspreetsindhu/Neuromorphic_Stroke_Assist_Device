@@ -1,4 +1,4 @@
-# 🧠 Neuromorphic Stroke Assist Device
+# 🧠 Neuromorphic Stroke Assist Devic
 
 ## 📌 Overview
 The **Neuromorphic Stroke Assist Device** is an AI-based intelligent healthcare system designed for early detection and risk prediction of stroke. It uses machine learning techniques and data-driven analysis to evaluate patient health parameters and classify stroke risk levels in real time.

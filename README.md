@@ -34,13 +34,12 @@ This project aims to:
 - Scikit-learn  
 - Matplotlib  
 - Seaborn  
-- TensorFlow / PyTorch *(if used)*  
-- OpenCV *(if applicable)*  
+- TensorFlow / PyTorch 
 
 ---
 
 ## 📂 Dataset
-- Dataset used: *(Add dataset name here, e.g., Kaggle Stroke Prediction Dataset)*  
+- Dataset used: *( Kaggle Stroke Prediction Dataset)*  
 - Type: Structured medical dataset  
 - Features include: age, hypertension, heart disease, glucose level, BMI, etc.  
 
